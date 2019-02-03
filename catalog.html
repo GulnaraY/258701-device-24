@@ -51,11 +51,51 @@
 		</ul>
 		<section class="filters">
 			<h2>Фильтр:</h2>
-			<div class="price-range">
-				<h3>Стоимость</h3>
-				<!-- Здесь ползунок -->
-			</div>
-			<!-- Здесь будет форма -->
+			<form class="filter-form" action="https://echo.htmlacademy.ru" method="get" >
+				<fieldset>
+					<legend>Стоимость</legend>
+				</fieldset>
+				<fieldset >
+					<legend>Цвет</legend>
+					<ul>
+						<li class="filter-options">
+							<input type="checkbox" name="black" id="black-checkbox-field" checked>
+							<label for="black-checkbox-field">Черный</label>
+						</li>
+						<li class="filter-options">
+							<input type="checkbox" name="white" id="white-checkbox-field">
+							<label for="white-checkbox-field">Белый</label>
+						</li>
+						<li class="filter-options">
+							<input type="checkbox" name="blue" id="blue-checkbox-field" checked>
+							<label for="blue-checkbox-field">Синий</label>
+						</li>
+						<li class="filter-options">
+							
+							<input type="checkbox" name="red" id="red-checkbox-field" checked>
+							<label for="red-checkbox-field">Красный</label>
+						</li>
+						<li class="filter-options">
+							<input type="checkbox" name="pink" id="pink-checkbox-field">
+							<label for="pink-checkbox-field">Розовый </label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Bluetooth</legend>
+					<ul>
+						<li class="filter-options">
+							<input type="radio" name="bluetooth" value="yes" id="bluetooth-yes-field" checked>
+							<label for="bluetooth-yes-field">Есть</label>
+						</li>
+						<li class="filter-options">
+							<input type="radio" name="bluetooth" id="bluetooth-no-field" value="no">
+							<label for="bluetooth-no-field">Нет</label>
+						</li>
+					</ul>
+				</fieldset>
+				<button class="button" type="submit">Показать</button>
+			</form>
 		</section>
 		<section class="catalog">
 			<div class="product-sorting">
@@ -157,9 +197,9 @@
 		</div>
 		<div class="footer-social">
 			<ul>
-				<li><a class="social-button" href="#">Фейсбук</a></li>
-				<li><a class="social-button" href="#">Инстаграм</a></li>
-				<li><a class="social-button" href="#">Вконтакте</a></li>
+				<li><a class="social-button" href="#" aria-label="Страница магазина Device на Фейсбук"></a></li>
+				<li><a class="social-button" href="#" aria-label="Страница магазина Device в Инстаграм"></a></li>
+				<li><a class="social-button" href="#" aria-label="Страница магазина Device во Вконтакте"></a></li>
 			</ul>
 		</div>
 		<p class="footer-copyright"><a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></p>
