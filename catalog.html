@@ -54,6 +54,10 @@
 			<form class="filter-form" action="https://echo.htmlacademy.ru" method="get" >
 				<fieldset>
 					<legend>Стоимость</legend>
+					<label for="price_from_field">от</label>
+					<input type="text" name="price_from" id="price_from_field" value="0">
+					<label for="price_to_field">до</label>
+					<input type="text" name="price_to" id="price_to_field" value="5000">
 				</fieldset>
 				<fieldset >
 					<legend>Цвет</legend>
@@ -106,8 +110,8 @@
 					<li class="sorting-list-item"><a href="#">По популярности</a></li>
 				</ul>
 				<ul class="sorting-direction">
-					<li class="sorting-direction-item"><a href="#">По возрастанию</a></li>
-					<li class="sorting-direction-item sorting-direction-current"><a>По убыванию</a></li>
+					<li class="sorting-direction-item sorting-direction-current"><a href="#">По возрастанию</a></li>
+					<li class="sorting-direction-item "><a>По убыванию</a></li>
 				</ul>
 			</div>
 			<section class="products-list">
