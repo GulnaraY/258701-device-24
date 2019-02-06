@@ -29,13 +29,54 @@ a{
     text-decoration: none;
 }
 
+.button{
+    font-family: "gilroyextrabold";
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: 3.6px;
+
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    color: #000000;
+    border: none;
+   
+    background-color: #f0c52e;
+}
+
+.button:hover,
+.button:focus{
+    
+}
+
+.button:active{
+    opacity: 0.3
+}
+
 .main-header{
     color:#000000;
     background-color: #f0c52e;
 }
 
+.main-page-link:hover,
+.main-page-link:focus{
+    opacity: 0.6;
+}
+
+.main-page-link:active{
+    opacity: 0.3;
+}
+
 .search-form input{
     font:inherit;
+
+    background-color: transparent;
+    border: 2px solid #000000;
+}
+
+.search-form input:focus{
+    color: #000000;
 }
 
 .search-form button{
@@ -53,8 +94,14 @@ a{
 
 .search-form button:active{
     background-color: #000000;
-    color: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    opacity: 0.3;
 }
+
+.sign-out a{
+    opacity: 0.3;
+}
+
 .site-navigation,
 .user-navigation,
 .category-menu{
@@ -78,10 +125,267 @@ a{
 .site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus{
-    color: rgba(0, 0, 0, 0.6);
+    opacity: 0.6;
 }
 
 .site-navigation a:active,
 .user-navigation a:active{
-    color: rgba(0, 0, 0, 0.3);
+    opacity: 0.3
+}
+
+.category-menu .current:hover,
+.category-menu .current:focus,
+.category-menu .current:active{
+    opacity: 1;
+}
+
+.sign-out a:hover,
+.sign-out a:focus,
+.sign-out a:active{
+    opacity: 0.3;
+}
+
+/*стили для блоков в доп задании*/
+main h2{
+    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-size: 47px;
+    line-height: 48px;
+    letter-spacing: 0.47px;
+    font-weight: normal;
+}
+
+
+.about-us p,
+.contacts p{
+    letter-spacing: 0;
+}
+
+.delivery-partners-list{
+    list-style: none;
+
+    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: normal;
+}
+
+.breadcrumbs{
+    list-style: none;
+}
+
+.breadcrumbs{
+    color: #000000;
+    
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.14px;
+    font-weight: 300;
+
+}
+
+.breadcrumbs a{
+    color: #000000;
+    opacity: 0.3;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus{
+    opacity: 0.6;
+}
+
+.breadcrumbs a:active{
+    opacity: 0.1;
+}
+
+.breadcrumbs .current-item{
+    opacity: 0.3
+}
+
+.page-title{
+    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-style: 47px;
+    line-height: 46px;
+    font-weight: normal;
+}
+
+.inner-page h2{
+
+    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+
+}
+
+.inner-page .filter-title{
+    background-color: #dbdbdb;
+}
+
+.product-sorting{
+    background-color: #ebebeb;
+}
+
+.product-sorting ul{
+    list-style: none;
+}
+
+.product-sorting a{
+    color: #000000;
+    opacity: 0.3;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-style: 14px;
+    line-height: 18px;
+}
+
+.sorting-current-item a{
+    opacity: 1;
+}
+
+.product-sorting a:hover,
+.product-sorting a:focus{
+    opacity: 0.6;
+} 
+
+.product-sorting a:active{
+    opacity: 1;
+}
+
+.sorting-current-item a:hover,
+.sorting-current-item a:focus,
+.sorting-current-item a:active{
+    opacity: 1;
+}
+
+.filter-form{
+    background-color: #efefef;
+
+    color: #000000;
+}
+
+.filter-form fieldset{
+    border:none;
+}
+
+.filter-form legend{
+    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: 0.18px;
+}
+
+.filter-form label{
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 0.14px;
+    font-weight: 300;
+}
+
+.filter-form ul{
+    list-style: none;
+}
+
+.filter-input{
+    font:inherit;
+}
+
+.filter-input:disabled + label{
+    opacity: 0.25;
+}
+
+.products-list ul{
+    list-style: none;
+}
+
+.products-list a{
+    color: #000000;
+}
+
+.products-list h3{
+    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.18px;
+}
+
+.products-list .catalog-item-price{
+    font-family: "gilroylight", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.16px;
+}
+
+.products-list .comparise-button{
+    color: #000000;
+    opacity: 0.5;
+
+    font-style: 13px;
+    line-height: 20px;
+    letter-spacing: 0.13px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.products-list .comparise-button:hover,
+.products-list .comparise-button:focus{
+    opacity: 1;
+}
+
+.products-list .comparise-button:active{
+    opacity: 0.2;
+}
+
+.modal{
+    display: none;
+}
+.main-footer{
+    color: #ffffff;
+
+    background-color: #464646;
+}
+
+.main-footer a{
+    color: #ffffff;
+}
+
+.footer-user-menu,
+.footer-site-menu,
+.footer-social ul{
+    list-style: none;
+}
+
+.main-footer a:hover,
+.main-footer a:focus
+{
+    opacity: 0.6;
+}
+
+.main-footer a:active{
+    opacity: 0.3;
+}
+
+.footer-sign-out a{
+    opacity: 0.3
+}
+
+.footer-sign-out a:hover,
+.footer-sign-out a:focus,
+.footer-sign-out a:active{
+    opacity: 0.3;    
+}
+
+.footer-site-menu{
+    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 3.6px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.footer-contacts address{
+    font-style: normal;
 }
