@@ -111,7 +111,8 @@ a{
 .user-navigation a{
     color: #000000;
 }
-.site-navigation>li>a{
+
+.navigation-item > a{
     font-family: "gilroyextrabold", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
