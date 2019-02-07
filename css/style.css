@@ -154,6 +154,85 @@ main h2{
     letter-spacing: 0.47px;
     font-weight: normal;
 }
+.products-slider{
+    list-style: none;
+}
+
+.slider-promo-title{
+    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 47px;
+    line-height: 56px;
+    letter-spacing: 0.47px;
+}
+
+.slider-products-info th{
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.13px;
+}
+
+.slider-products-info td{
+    font-family: "gilroylight", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.36px;
+}
+
+.products-categories .categories-list{
+    list-style: none;
+}
+
+.products-categories a{
+    color: #000000;
+    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.18px;
+}
+
+.categories-item img{
+    background-color: rgba(240, 197, 46, 0.5);
+    
+}
+
+.categories-item-link:hover img,
+.categories-item-link:focus img{
+      background-color: rgba(240, 197, 46, 1);
+}
+
+.categories-item-link:active img,
+.categories-item-link:active h3{
+    opacity: 0.3;
+}
+
+.services{
+    background-color: #e5e5e5;
+}
+
+.services .services-slider{
+   list-style: none; 
+}
+
+.services .slider-button:active{
+    color: #f7e184;
+    background-color: #000000;
+    opacity: 1;
+}
+
+.services h3{
+    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-size: 47px;
+    line-height: 48px;
+    letter-spacing: 0.47px;
+}
+
+.brands .brands-list{
+    list-style: none;
+}
 
 
 .about-us p,
@@ -337,6 +416,10 @@ main h2{
 
 .products-list .comparise-button:active{
     opacity: 0.2;
+}
+
+.pagination-list{
+    list-style: none;
 }
 
 .modal{
