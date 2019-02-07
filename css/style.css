@@ -234,6 +234,16 @@ main h2{
     list-style: none;
 }
 
+.brands img{
+    filter: grayscale(1);
+    opacity: 0.2;
+}
+
+.brands-list-link:hover img,
+.brands-list-link:focus img{
+    filter: none;
+    opacity: 1;
+}
 
 .about-us p,
 .contacts p{
