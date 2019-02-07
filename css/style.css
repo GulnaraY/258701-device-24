@@ -420,6 +420,54 @@ main h2{
 
 .pagination-list{
     list-style: none;
+    background-color: rgba(0, 0, 0, 0.08);
+    color: #000000;
+}
+
+.pagination-item a{
+    color: rgba(0, 0,0, 0.3);
+    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+}
+
+.pagination-current a,
+.pagination-prew a,
+.pagination-next a{
+    color: #000000;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus{
+    color:rgba(0, 0, 0, 0.6);
+}
+
+.pagination-item a:active{
+    color:rgba(0, 0, 0, 1);
+}
+
+.pagination-current a:hover,
+.pagination-current a:focus,
+.pagination-current a:active
+{
+    color:rgba(0, 0, 0, 1);
+}
+
+.pagination-prew a:hover,
+.pagination-prew a:focus,
+.pagination-next a:hover,
+.pagination-next a:focus{
+    color: rgba(0, 0, 0, 1);
+    background-color:  rgba(0, 0, 0, 0.16);
+}
+
+.pagination-prew a:active,
+.pagination-next a:active{
+    color: rgba(0, 0, 0, 0.3);
+    background-color:  rgba(0, 0, 0, 0.16);
 }
 
 .modal{
