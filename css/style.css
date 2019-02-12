@@ -137,11 +137,32 @@ a{
 
 .user-navigation{
     width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.user-navigation .login-link{
+    flex-grow: 1;
 }
 
 .site-navigation{
-    width: 1040px;
-    
+    width: 1040px;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.navigation-catalog{
+    flex-grow: 5;
+}
+
+/*.navigation-delivery,
+.navigation-varranty{
+    flex-grow: 1;
+}*/
+
+.navigation-contacts{
+    flex-grow: 2;
 }
 
 .sign-out a{
@@ -612,6 +633,8 @@ main h2{
 
 .footer-user-menu{
     width: 500px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .main-footer a{
@@ -660,6 +683,9 @@ main h2{
 }
 
 .footer-site-menu{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 440px;
     padding: 0 100px;
     
@@ -669,6 +695,8 @@ main h2{
     letter-spacing: 3.6px;
     font-weight: normal;
     text-transform: uppercase;
+
+
 }
 
 .footer-address{
@@ -693,6 +721,9 @@ main h2{
 
 .footer-social{
     width: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
 }
 
