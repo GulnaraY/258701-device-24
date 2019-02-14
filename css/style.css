@@ -29,6 +29,29 @@ a{
     text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .button{
     font-family: "gilroyextrabold";
     font-size: 18px;
@@ -75,14 +98,19 @@ a{
     margin: 0 auto;
     padding: 0 60px;
     padding-bottom: 55px;
+    padding-top: 50px;
     margin-top: 20px;
     background-color: rgba(240, 197, 46, 0.5);
+    position: relative;
 }
 
 .main-header-logo{
     width: 163px;
     height: 35px;
     margin-bottom: 35px;
+    position: absolute;
+    top:-17.5px;
+    left:60px;
 }
 
 .header-middle{
@@ -221,7 +249,6 @@ a{
     opacity: 0.3;
 }
 
-/*стили для блоков в доп задании*/
 main h2{
     font-family: "gilroyextrabold", Arial, sans-serif;
     font-size: 47px;
@@ -229,11 +256,39 @@ main h2{
     letter-spacing: 0.47px;
     font-weight: normal;
 }
+
+.popular-products{
+    margin-bottom: 110px;
+}
+
 .products-slider{
+    padding: 0;
     list-style: none;
+    width: 1040px;
+    margin: 0 auto; 
+}
+
+.products-slider p{
+    margin: 0;
+    padding: 0;
+}
+
+.products-slider-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-left-column{
+    width: 440px;
+}
+
+.slider-right-column{
+    width: 500px;
 }
 
 .slider-promo-title{
+    margin: 0;
+    padding: 0;
     font-family: "gilroyextrabold", Arial, sans-serif;
     font-weight: normal;
     font-size: 47px;
@@ -257,8 +312,18 @@ main h2{
     letter-spacing: 0.36px;
 }
 
-.products-categories .categories-list{
+.products-categories{
+   margin-bottom: 85px;
+    
+}
+
+.categories-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .products-categories a{
@@ -304,9 +369,18 @@ main h2{
     line-height: 48px;
     letter-spacing: 0.47px;
 }
+.brands{
+    margin-bottom: 145px;
+}
 
-.brands .brands-list{
+.brands-list{
+    display: flex;
+    justify-content: space-between;
+    width: 1040px;
+    margin: 0 auto;
+    padding: 0;
     list-style: none;
+
 }
 
 .brands img{
@@ -353,17 +427,20 @@ main h2{
 .inner-page .page-title{
     width: 1040px;
     margin: 0 auto;
+    margin-bottom: 40px;
     padding: 0 60px;
     font-family: "gilroyextrabold", Arial, sans-serif;
-    font-style: 47px;
+    font-size: 47px;
     line-height: 48px;
     font-weight: normal;
     letter-spacing: 10;
 }
 
 .breadcrumbs{
+    display: flex;
     width: 1040px;
     margin: 0 auto;
+    margin-bottom: 45px;
     padding: 0 60px;
     list-style: none;
     color: #000000;
@@ -371,6 +448,10 @@ main h2{
     line-height: 24px;
     letter-spacing: 0.14px;
     font-weight: 300;
+}
+
+.breadcrumbs li{
+    padding-right: 40px;
 }
 
 .breadcrumbs a{
@@ -392,8 +473,9 @@ main h2{
 }
 
 .catalog-columns{
+
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .inner-page h2{
@@ -408,14 +490,28 @@ main h2{
 
 .inner-page .filter-title{
     background-color: #dbdbdb;
+
+
 }
 
 .product-sorting{
     background-color: #ebebeb;
+    display: flex;
 }
+
+.sorting-list{
+    display: flex;
+}
+
+.sorting-direction{
+    display: flex;
+}
+
 
 .product-sorting ul{
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .product-sorting a{
@@ -423,7 +519,7 @@ main h2{
     opacity: 0.3;
     font-family: "Open Sans";
     font-weight: 400;
-    font-style: 14px;
+    font-size: 14px;
     line-height: 18px;
 }
 
@@ -448,21 +544,41 @@ main h2{
 
 
 .filters{
+    /*margin-left: 60px;*/
+    background-color: #efefef;
+    color: #000000;
+    
+    
+}
+
+.filters-container{
+    margin: 0;
+    margin-left: auto;
+    padding-right: 75px;
+    padding-left: 65px;
     width: 200px;
-    margin-left: 60px;
+    
+}
+
+.filter-title{
+    margin: 0;
+    padding: 0;
 }
 
 .filter-form{
-    background-color: #efefef;
-    color: #000000;
-
+/*    margin-left: 60px;
+    margin-right: 70px;*/
 }
 
 .filter-form fieldset{
     border:none;
+    margin: 0;
+    padding: 0;
 }
 
 .filter-form legend{
+    margin: 0;
+    padding: 0;
     font-family: "gilroyextrabold", Arial, sans-serif;
     font-size: 18px;
     font-weight: normal;
@@ -492,13 +608,20 @@ main h2{
 }
 
 .catalog{
-    width: 760px;
+     
 }
 
 .catalog-list{
-    margin: 0;
-    padding: 0;
     width: 760px;
+    margin: 0;
+    margin-right: auto;
+   /* margin-left: 75px; */
+    padding: 0;
+    padding-right: 20px;
+    padding-left: 75px;
+   
+    list-style: none;
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -511,10 +634,6 @@ main h2{
 
 .catalog-item:nth-child(2n){
     margin-right: 0;
-}
-
-.products-list ul{
-    list-style: none;
 }
 
 .products-list a{
@@ -540,7 +659,7 @@ main h2{
     color: #000000;
     opacity: 0.5;
 
-    font-style: 13px;
+    font-size: 13px;
     line-height: 20px;
     letter-spacing: 0.13px;
     text-align: center;
@@ -558,7 +677,11 @@ main h2{
 }
 
 .pagination-list{
+    display: flex;
+    justify-content: space-between;
     list-style: none;
+    margin: 0;
+    padding: 0;
     background-color: rgba(0, 0, 0, 0.08);
     color: #000000;
 }
