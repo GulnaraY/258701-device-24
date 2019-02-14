@@ -871,6 +871,24 @@ main h2{
     background-color: #464646;
 }
 
+.main-footer a{
+    color: #ffffff;
+}
+
+.main-footer a:hover,
+.main-footer a:focus
+{
+    opacity: 0.6;
+}
+
+.main-footer a:active{
+    opacity: 0.3;
+}
+
+.footer-sign-out a{
+    opacity: 0.3
+}
+
 .footer-top{
     display: flex;
     justify-content: space-between;
@@ -879,13 +897,51 @@ main h2{
 }
 
 .footer-user-menu{
-    width: 500px;
+    width: 600px;
     display: flex;
     justify-content: flex-end;
 }
 
-.main-footer a{
-    color: #ffffff;
+.footer-user-menu li{
+    margin-left: 30px;
+}
+
+.footer-user-menu li:first-child{
+    margin-left: 0;
+}
+
+.footer-user-menu a{
+    display: block;
+    padding-left: 30px;
+    position: relative;
+}
+
+.footer-user-menu a::before{
+    content:"";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 0;
+    top: 7px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer-login-link a::before,
+.footer-user-profile a::before{
+    background-image: url("../img/user_icon_footer.svg");
+}
+
+.footer-comparision a::before{
+    background-image: url("../img/compare_icon_footer.svg");
+}
+
+.footer-cart a::before{
+    background-image: url("../img/cart_icon_footer.svg");
+}
+
+.footer-sign-out a{
+    padding-left: 0;
 }
 
 .footer-logo{
@@ -902,19 +958,7 @@ main h2{
     list-style: none;
 }
 
-.main-footer a:hover,
-.main-footer a:focus
-{
-    opacity: 0.6;
-}
 
-.main-footer a:active{
-    opacity: 0.3;
-}
-
-.footer-sign-out a{
-    opacity: 0.3
-}
 
 .footer-sign-out a:hover,
 .footer-sign-out a:focus,
@@ -963,7 +1007,7 @@ main h2{
 .footer-bottom{
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .footer-social{
@@ -974,9 +1018,53 @@ main h2{
 
 }
 
+.social-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: #000000;
+    opacity: 0.3;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fb-button{
+    background-image: url("../img/facebook_logo.svg");
+}
+
+.insta-button{
+    background-image: url("../img/instagram_logo.svg");
+}
+
+.tw-button{
+    background-image: url("../img/twitter_logo.svg");
+}
+
+.social-button:hover,
+.social-button:focus{
+    opacity: 0.6;
+}
+
+.social-button:active{
+    opacity: 0.1;
+}
+
 .footer-copyright{
     width: 60px;
+    text-align: right;
     margin: 0;
     padding: 0;
     margin-left: 440px;
+}
+
+.footer-copyright a{
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    background-image: url("../img/logo-htmlacademy.svg");
+    background-repeat: no-repeat;
+    background-position: 100%;
 }
