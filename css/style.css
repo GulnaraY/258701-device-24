@@ -256,6 +256,14 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
 }
 
+.navigation-item{
+    margin-left: 20px;
+}
+
+.navigation-item:first-child{
+    margin-left: 0;
+}
+
 .navigation-catalog{
     margin-right: auto;
     padding-right: 33px;
@@ -300,16 +308,16 @@ input[type="radio"].visually-hidden {
     padding-right: 60px;
 }
 
-.category-menu li:nth-last-child(2){
+.category-menu li:nth-child(3n-1):nth-last-child(2) {
     margin-bottom: 30px;
 }
 
-.navigation-delivery{
-    margin-right: 39px;
+.navigation-varranty{
+    margin-left: 39px;
 }
 
-.navigation-varranty{
-    margin-right: 100px;
+.navigation-contacts{
+    margin-left: 100px;
 }
 
 .sign-out a{
