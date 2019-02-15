@@ -68,7 +68,6 @@ input[type="radio"].visually-hidden {
     vertical-align: middle;
     color: #000000;
     border: none;
-
 }
 
 .button::before{
@@ -543,19 +542,47 @@ main h2{
 
 .about-us{
     width: 465px;
+    position: relative;
+    padding-top: 55px;
 }
 
 .contacts{
     width: 560px;
+    position: relative;
+    padding-top: 55px;
+}
+
+.about-us::before,
+.contacts::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 7px;
+    background-color: #000000;
+
+}
+
+.about-us h2,
+.contacts h2{
+    margin: 0;
+    margin-bottom: 55px;
+    padding: 0;
 }
 
 .about-us p,
 .contacts p{
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
     letter-spacing: 0;
 }
 
+
 .delivery-partners-list{
     margin: 0;
+    margin-bottom: 65px;
     padding: 0;
     list-style: none;
 
@@ -563,6 +590,23 @@ main h2{
     font-size: 16px;
     line-height: 40px;
     font-weight: normal;
+}
+
+.delivery-partners-list li{
+    position: relative;
+    padding-left:35px;
+}
+
+.delivery-partners-list li::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -5px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #e5e5e5;
+    border-radius:50%;
 }
 
 .inner-page .page-title{
