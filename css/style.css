@@ -1069,6 +1069,18 @@ main h2{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: relative;
+}
+
+.footer-bottom::before{
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    margin-top: -3px;
+    width: 80px;
+    height: 7px;
+    background-color: #ffc600;
 }
 
 .footer-social{
