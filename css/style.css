@@ -62,18 +62,21 @@ input[type="radio"].visually-hidden {
     font-weight: normal;
     line-height: 24px;
     letter-spacing: 3.6px;
+    cursor: pointer;
 
     text-transform: uppercase;
     text-align: center;
     vertical-align: middle;
     color: #000000;
     border: none;
+    z-index: 100;
+
 }
 
 .button::before{
     content: "";
     position: absolute;
-    z-index: -1;
+    z-index: -20;
     top: 50%;
     left: 0;
     margin-top: -4px;
@@ -251,7 +254,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sign-out a::before{
-    content: none;
+    display: none;
 }
 
 .cart{
@@ -623,6 +626,7 @@ main h2{
 
 .breadcrumbs{
     display: flex;
+    flex-wrap: wrap;
     width: 1040px;
     margin: 0 auto;
     margin-bottom: 45px;
@@ -658,7 +662,7 @@ main h2{
 }
 
 .breadcrumbs li.current-item::before{
-    content: none;
+    display: none;
 }
 
 .breadcrumbs a{
@@ -697,13 +701,12 @@ main h2{
 
 .inner-page .filter-title{
     background-color: #dbdbdb;
-
-
 }
 
 .product-sorting{
     background-color: #ebebeb;
     display: flex;
+    margin-bottom: 70px;
 }
 
 .sorting-list{
@@ -814,15 +817,10 @@ main h2{
     opacity: 0.25;
 }
 
-.catalog{
-     
-}
-
 .catalog-list{
     width: 760px;
     margin: 0;
     margin-right: auto;
-   /* margin-left: 75px; */
     padding: 0;
     padding-right: 20px;
     padding-left: 75px;
@@ -835,12 +833,31 @@ main h2{
 }
 
 .catalog-item{
+    position: relative;
     margin-right: 40px;
     width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
 }
 
 .catalog-item:nth-child(2n){
     margin-right: 0;
+}
+
+.catalog-item-title{
+    order:1;
+    width: 260px;
+}
+
+.catalog-item-image img{
+    margin-bottom: 35px;
+}
+
+.catalog-item-price{
+    order:2;
+    width: 80px;
 }
 
 .products-list a{
@@ -848,10 +865,18 @@ main h2{
 }
 
 .products-list h3{
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
     font-family: "gilroyextrabold", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.18px;
+}
+
+.products-list p{
+    margin: 0;
+    padding: 0;
 }
 
 .products-list .catalog-item-price{
@@ -860,6 +885,18 @@ main h2{
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.16px;
+
+}
+
+.catalog-item-actions{
+   display: none;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 200px;
+   position: absolute;
+   top: 190px;
+   left: 75px;
 }
 
 .products-list .comparise-button{
@@ -873,9 +910,40 @@ main h2{
     vertical-align: middle;
 }
 
+.new-product::before{
+    content: "New";
+    position: absolute;
+    text-transform: uppercase;
+    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.7px;
+    color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    right: 27px;
+    top: 30px;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border: 2px solid rgba(0 ,0 ,0 ,0.1);
+    border-radius: 50%;
+}
 
-.products-list .comparise-button:hover,
-.products-list .comparise-button:focus{
+.catalog-item-image a:hover,
+.catalog-item-image a:focus{
+    opacity: 0.7;
+}
+
+.catalog-item-image:hover ~ .catalog-item-actions,
+.catalog-item-image:focus ~ .catalog-item-actions{
+    display: flex;
+}
+
+.catalog-item-image:hover ~ .comparise-button:hover,
+.catalog-item-image:focus ~ .comparise-button:focus{
     opacity: 1;
 }
 
