@@ -105,8 +105,6 @@ input[type="radio"].visually-hidden {
 
 .main-header{
     color:#000000;
-
-    /*margin-bottom: 55px;*/
 }
 
 .main-navigation{
@@ -730,6 +728,10 @@ main h2{
     letter-spacing: 10;
 }
 
+.main-header.inner-page{
+    margin-bottom: 40px;
+}
+
 .breadcrumbs{
     display: flex;
     flex-wrap: wrap;
@@ -1095,7 +1097,7 @@ main h2{
     opacity: 0.5;
 
     font-size: 13px;
-    line-height: 20px;
+    line-height: 20px; 
     letter-spacing: 0.13px;
     text-align: center;
     vertical-align: middle;
@@ -1284,6 +1286,10 @@ main h2{
 .footer-logo{
     width: 163px;
     height: 35px;
+}
+
+.footer-logo.logo-current-page:hover{
+    opacity: 1;
 }
 
 .footer-user-menu,
