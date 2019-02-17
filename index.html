@@ -49,8 +49,13 @@
 		<h1 class="visually-hidden">Интернет-магазин Device</h1>
 		<section class="popular-products container">
 			<h2 class="visually-hidden">Популярные товары</h2>
+			<div class="slider-controls">
+				<label class="active" for="product-1">Первый</label>
+				<label for="product-2">Второй</label>
+				<label for="product-3">Третий</label>
+			</div>
 			<ol class="products-slider">
-				<li class="products-slider-item">
+				<li class="products-slider-item" id="slide-1">
 					<div class="slider-left-column">
 						<p class ="slider-image"><img src="img/monopod_slider_img.png" width="384" height="486" alt="Самая длинная селфи-палка"></p>
 					</div>
@@ -72,7 +77,7 @@
 						</table>
 					</div>	
 				</li>
-				<li class="products-slider-item">
+				<li class="products-slider-item" id="slide-2">
 					<div class="slider-left-column">
 						<p class ="slider-image"><img src="img/fitband_slider_img.png" width="345" height="485" alt="Фитнес-браслет MI-8"></p>
 					</div>
@@ -90,7 +95,7 @@
 						</table>
 					</div>
 				</li>
-				<li class="products-slider-item">
+				<li class="products-slider-item" id="slide-3">
 					<div class="slider-left-column">
 						<p class ="slider-image"><img src="img/drone_slider_img.png" width="526" height="334" alt="Квадрокоптер P-800"></p>
 					</div>
@@ -167,19 +172,21 @@
 		</section>
 		<section class="services">
 			<h2 class="visually-hidden">Сервисы</h2>
+			<div class="slider-buttons">
+				<button class="button slider-button">Доставка</button>
+				<button class="button slider-button">Гарантия</button>
+				<button class="button slider-button">Кредит</button>
+			</div>
 			<ul class="services-slider">
 				<li class="services-slider-item">
-					<button class="button slider-button">Доставка</button>
 					<h3>Доставка</h3>
 					<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем поднимая его на ваш этаж.</p>
 				</li>
 				<li class="services-slider-item">
-					<button class="button slider-button">Гарантия</button>
 					<h3>Гарантия</h3>
 					<p>Если из-за возгорания купленного у нас товара у вас сгорит дом&mdash; не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
 				</li>
 				<li class="services-slider-item">
-					<button class="button slider-button">Кредит</button>
 					<h3>Кредит</h3>
 					<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
 				</li>

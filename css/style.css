@@ -470,10 +470,14 @@ main h2{
 }
 
 .products-slider-item{
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     position: relative;
+}
+
+.products-slider-item:nth-child(1){
+    display: flex;
 }
 
 .products-slider-item::before{
@@ -501,7 +505,43 @@ main h2{
     content: "03";
 }
 
+.slider-controls{
+    position: absolute;
 
+    top: 315px;
+    right: 100px;
+    z-index: 20;
+    font-size: 0;
+}
+
+.slider-controls label{
+    display: inline-block;
+    position: relative;
+    width: 11px;
+    height: 11px;
+    margin-right: 20px;
+
+    vertical-align: top;
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 50%;
+}
+
+.slider-controls .active::before{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 5px;
+    height: 5px;
+    border: 1px solid #000;
+    border-radius: 50%;
+
+}
+
+.slider-controls label:last-child{
+    margin-right: 0;
+}
 
 .slider-promo-title{
     margin: 0;
