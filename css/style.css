@@ -1081,10 +1081,13 @@ main h2{
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   width: 200px;
+   width: 360px;
+   height: 380px;
    position: absolute;
-   top: 190px;
-   left: 75px;
+   top: 0;
+   left: 0;
+   background-color: rgba(255, 255, 255, 0.7);
+
 }
 
 .products-list .comparise-button{
@@ -1118,11 +1121,6 @@ main h2{
     padding-bottom: 18px;
     border: 2px solid rgba(0 ,0 ,0 ,0.1);
     border-radius: 50%;
-}
-
-.catalog-item-image a:hover img,
-.catalog-item-image a:focus img{
-    opacity: 0.7;
 }
 
 .catalog-item-image:hover .catalog-item-actions,
