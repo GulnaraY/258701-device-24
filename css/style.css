@@ -525,6 +525,7 @@ main h2{
     background-color: transparent;
     border: 1px solid #000000;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .slider-controls .active::before{
@@ -566,7 +567,7 @@ main h2{
     margin-bottom: 65px;
 }
 
-.slider-products-info{
+.slider-products-info tbody{
     display: flex;
     flex-direction: column-reverse;
 }
@@ -963,10 +964,6 @@ main h2{
 
 }
 
-.filter-title{
-    height: 70px;
-}
-
 .product-sorting{
     /*background-color: #ebebeb;*/
     display: flex;
@@ -1018,18 +1015,17 @@ main h2{
 
 
 .filters{
-    /*margin-left: 60px;*/
-    /*background-color: #efefef;*/
     color: #000000;
     width: 200px;
     margin-right: 68px;
 
 }
 
-
 .filter-title{
     margin: 0;
-    padding: 0;
+    padding: 23px 0;
+    height: 24px;
+    margin-bottom: 70px;
 }
 
 .filter-form fieldset{
@@ -1077,6 +1073,77 @@ main h2{
 
 .filter-input{
     font:inherit;
+}
+
+.range-controls{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.range-controls .scale{
+    height: 2px;
+
+    background-color: #dbdbdb;
+}
+
+.range-controls .bar{
+    height: 2px;
+    width: 70%;
+
+    background-color: #91c92f;
+}
+
+.range-controls .toggle{
+    position: absolute;
+    left: 0;
+    top: -10px;
+
+    width: 4px;
+    height: 4px;
+    padding: 0;
+
+    border: 8px solid #ffffff;
+    background-color: #ababab;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    cursor: pointer;
+}
+
+.range-controls .toggle:active{
+    border: 9px solid #ffffff;
+}
+
+.range-controls .toggle-max{
+    left:120px;
+}
+
+.price-controls{
+    font-size: 0;
+}
+
+.price-controls label{
+    display: inline-block;
+    width: 49%;
+
+    font-family: "gilroylight", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color:rgba(0, 0, 0, 0.2);
+}
+
+.price-controls input{
+    width: 35px;
+    padding: 0;
+
+    font-family: "gilroylight", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color:rgba(0, 0, 0, 0.2);
+
+    background-color: transparent;
+    border: none;
 }
 
 .filter-input:disabled + label{
@@ -1158,22 +1225,15 @@ main h2{
 }
 
 .catalog{
-    /*flex-grow:1;*/
     width: 760px;
     padding-left: 75px;
     background-color: #ffffff;
-    /*flex-grow: 1;*/
     z-index: 10;
 }
 
 .catalog-list{
-    /*width: 760px;*/
     margin: 0;
-    /*margin-right: auto;*/
-    padding: 0;
-    /*padding-right: 20px;*/
-    /*padding-left: 75px;*/
-   
+    padding: 0;  
     list-style: none;
     
     display: flex;

@@ -65,10 +65,21 @@
 					<form class="filter-form" action="https://echo.htmlacademy.ru" method="get" >
 						<fieldset>
 							<legend>Стоимость</legend>
-							<label for="price_from_field">от</label>
-							<input type="text" name="price_from" id="price_from_field" value="0">
-							<label for="price_to_field">до</label>
-							<input type="text" name="price_to" id="price_to_field" value="5000">
+							<div class="range-filter">
+								<div class="range-controls">
+									<div class="scale">
+										<div class="bar"></div>
+									</div>
+									<div class="toggle toggle-min"></div>
+									<div class="toggle toggle-max"></div>
+								</div>
+								<div class="price-controls">
+									<label class="min-price">от
+									<input type="text" name="min-price" value="0"></label>
+									<label class="max-price">до
+									<input type="text" name="max-price" value="5000"></label>
+								</div>
+							</div>
 						</fieldset>
 						<fieldset >
 							<legend>Цвет</legend>
