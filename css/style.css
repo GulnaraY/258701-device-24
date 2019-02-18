@@ -1133,7 +1133,7 @@ main h2{
 }
 
 .price-controls input{
-    width: 35px;
+    width: 45px;
     padding: 0;
 
     font-family: "gilroylight", Arial, sans-serif;
@@ -1373,6 +1373,32 @@ main h2{
     padding: 0;
     background-color: rgba(0, 0, 0, 0.08);
     color: #000000;
+    align-items: center;
+}
+
+.pagination-prew a,
+.pagination-next a{
+    display: block;
+    /*box-sizing: border-box;*/
+    padding-top: 23px;
+    padding-bottom: 23px;
+    width: 135px;
+    text-align: center;
+}
+
+.page-number{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.page-number li{
+    margin-right: 30px;
+}
+
+.page-number li:last-child{
+    margin-right: 0;
 }
 
 .pagination-item a{

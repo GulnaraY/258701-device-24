@@ -46,7 +46,6 @@
 			</nav>
 		</div>
 	</header>
-
 	<main class="inner-page">
 		<div class="container">
 			<h1 class="page-title">
@@ -75,9 +74,11 @@
 								</div>
 								<div class="price-controls">
 									<label class="min-price">от
-									<input type="text" name="min-price" value="0"></label>
+										<input type="text" name="min-price" value="0">
+									</label>
 									<label class="max-price">до
-									<input type="text" name="max-price" value="5000"></label>
+										<input type="text" name="max-price" value="5000">
+									</label>
 								</div>
 							</div>
 						</fieldset>
@@ -196,9 +197,13 @@
 						</section>
 						<ul class="pagination-list">
 							<li class="pagination-item pagination-prew"><a href="#">Назад</a></li>
-							<li class="pagination-item pagination-current"><a>1</a></li>
-							<li class="pagination-item"><a href="#">2</a></li>
-							<li class="pagination-item"><a href="#">3</a></li>
+							<li class="pagination-item">
+								<ul class="page-number">
+									<li class="pagination-item pagination-current"><a>1</a></li>
+									<li class="pagination-item"><a href="#">2</a></li>
+									<li class="pagination-item"><a href="#">3</a></li>
+								</ul>
+							</li>
 							<li class="pagination-item pagination-next"><a href="#">Вперед</a></li>
 						</ul>
 					</div>
