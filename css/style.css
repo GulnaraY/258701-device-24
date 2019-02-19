@@ -572,9 +572,12 @@ main h2{
     flex-direction: column-reverse;
 }
 
+
+
 .slider-products-info th{
     margin: 0;
     padding: 0;
+    width: 160px;
     font-family: "Open Sans", Arial, sans-serif;
     font-weight: 300;
     font-size: 13px;
