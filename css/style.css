@@ -542,11 +542,13 @@ main h2{
     font-size: 0;
 }
 
-.slider-controls label{
+.slider-controls i{
     display: inline-block;
     position: relative;
     width: 11px;
     height: 11px;
+    margin: 0;
+    padding: 0;
     margin-right: 20px;
     vertical-align: top;
     background-color: transparent;
@@ -564,10 +566,9 @@ main h2{
     height: 5px;
     border: 1px solid #000;
     border-radius: 50%;
-
 }
 
-.slider-controls label:last-child{
+.slider-controls i:last-child{
     margin-right: 0;
 }
 
