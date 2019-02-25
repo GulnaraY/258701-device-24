@@ -258,11 +258,11 @@ input[type="radio"].visually-hidden {
 
 .user-profile a{
     padding-right: 20px;
- 
+    
 }
 
 .sign-out a{
-   padding-left:0; 
+ padding-left:0; 
 }
 
 .sign-out a::before{
@@ -326,7 +326,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
     top: 25px;
     left: -60px;
-     z-index: 20;
+    z-index: 20;
     display: none;
     flex-direction: column;
     flex-wrap: wrap;
@@ -474,7 +474,7 @@ main h2{
 }
 
 .products-slider-item:nth-child(1) .slider-image{
-       margin-left: 88px;
+ margin-left: 88px;
 }
 
 .products-slider-item:nth-child(2) .slider-image{
@@ -626,7 +626,7 @@ main h2{
 }
 
 .products-categories{
-   margin-bottom: 145px;
+ margin-bottom: 145px;
 }
 
 .categories-list{
@@ -1243,7 +1243,7 @@ main h2{
 }
 
 .filter-option{
-   padding-left: 40px; 
+ padding-left: 40px; 
 }
 
 .filter-option label {
@@ -1393,16 +1393,16 @@ main h2{
 }
 
 .catalog-item-actions{
-   display: none;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   width: 360px;
-   height: 380px;
-   position: absolute;
-   top: 0;
-   left: 0;
-   background-color: rgba(255, 255, 255, 0.7);
+ display: none;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ width: 360px;
+ height: 380px;
+ position: absolute;
+ top: 0;
+ left: 0;
+ background-color: rgba(255, 255, 255, 0.7);
 }
 
 .products-list .comparise-button{
@@ -1759,6 +1759,46 @@ li.footer-sign-out{
     background-position: 100%;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal{
     display: none;
     position: fixed;
@@ -1767,6 +1807,15 @@ li.footer-sign-out{
     margin-top: -280px;
     margin-left: -480px;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-show{
+    display: block;
+    animation: bounce 0.6s;
+}
+
+.modal-error{
+    animation: shake 0.6s;
 }
 
 .modal-feedback{
@@ -1862,9 +1911,19 @@ li.footer-sign-out{
     /*display: block;*/
 }
 
+.modal-map iframe{
+    position: relative;
+    z-index: 2;
+    border: none;
+}
+
 .modal-map p{
     margin: 0;
     padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .modal .popup-close{
@@ -1878,6 +1937,8 @@ li.footer-sign-out{
     border: none;
     border-radius: 50%;
     opacity: 0.5;
+    cursor: pointer;
+    z-index: 3;
 }
 
 .modal .popup-close:hover,
