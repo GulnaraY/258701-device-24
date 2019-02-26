@@ -488,17 +488,18 @@ main h2{
 }
 
 .products-slider-item:nth-child(1){
-    display: flex;
     margin-bottom: 97px;
 }
 .products-slider-item:nth-child(2){
     margin-bottom: 84px;
-    /*display: flex;*/
 }
 
 .products-slider-item:nth-child(3){
-    /*display: flex;*/
     margin-bottom: 112px
+}
+
+.show-slide{
+    display: flex;
 }
 
 .products-slider-item:nth-child(3) .slider-promo-text{
@@ -782,20 +783,21 @@ main h2{
 }
 
 .services-slider-item:nth-child(1){
-    display: block;
     background-image: url("../img/delivery_icon.svg");
 }
 
 .services-slider-item:nth-child(2){
-    /*display: block;*/
     background-image: url("../img/warranty_icon.svg");
     background-position: 545px 0px;
 }
 
 .services-slider-item:nth-child(3){
-    /*display: block;*/
     background-image: url("../img/credit_icon.svg");
     background-position: 535px 0;
+}
+
+.services-active-item{
+    display: block;
 }
 
 .services-slider-item:nth-child(3) p{

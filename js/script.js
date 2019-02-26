@@ -12,6 +12,12 @@
 		var storageName="";
 		var storageMail="";
 
+		var controls = document.querySelectorAll(".slider-controls i");
+		var productsSlider = document.querySelectorAll(".products-slider-item");
+
+		var servicesButtons = document.querySelectorAll(".slider-button");
+		var servicesSliderItems = document.querySelectorAll(".services-slider-item");
+
 		try{
 			storageName = localStorage.getItem("name");
 			storageMail = localStorage.getItem("mail");
@@ -80,3 +86,56 @@
 				}
 			}
 		});
+
+		for (var i=0; i<= controls.length-1; i++){
+			var slide = 0;
+			controls[i].addEventListener("click", function(evt){
+				evt.preventDefault();
+				if (!evt.path[0].classList.contains("active")){
+					for (var j =0; j<= controls.length-1; j++){
+						if (controls[j].classList.contains("active")){
+							controls[j].classList.remove("active");
+						}
+						if (controls[j] === evt.path[0]){
+							slide = j;
+							}
+					}
+					evt.path[0].classList.add("active");
+					if (!productsSlider[slide].classList.contains("show-slide")){
+						for( var j=0; j<=productsSlider.length-1; j++){
+							if (productsSlider[j].classList.contains("show-slide")) {
+								productsSlider[j].classList.remove("show-slide");
+							}
+						}
+						productsSlider[slide].classList.add("show-slide")
+					}
+				}
+			});
+		}
+
+		for (var i=0; i<= servicesButtons.length-1; i++){
+			var servicesSlide = 0;
+			servicesButtons[i].addEventListener("click", function(evt){
+				evt.preventDefault();
+				if (!evt.path[0].classList.contains("active-item")){
+					for (var j=0; j<=servicesButtons.length-1; j++){
+						if (servicesButtons[j].classList.contains("active-item")) {
+							servicesButtons[j].classList.remove("active-item");
+						}
+						if (servicesButtons[j] === evt.path[0]) {
+							servicesSlide = j;
+						}
+					}
+					evt.path[0].classList.add("active-item");
+					if (!servicesSliderItems[servicesSlide].classList.contains("services-active-item")){
+						for (var j=0; j<= servicesSliderItems.length-1; j++){
+							if (servicesSliderItems[j].classList.contains("services-active-item")) {
+								servicesSliderItems[j].classList.remove("services-active-item");
+							}
+						}
+						servicesSliderItems[servicesSlide].classList.add("services-active-item");
+					}
+				}
+			});
+		}
+		
