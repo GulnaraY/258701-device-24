@@ -1266,6 +1266,7 @@ main h2{
     top: 5px;
     border: 2px solid #000000;
     border-radius: 3px;
+    opacity: 1;
 }
 
 .filter-checkbox:checked +label::before{
@@ -1279,6 +1280,7 @@ main h2{
     background-image: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    opacity: 1;
 }
 
 .filter-radio + label::before{
@@ -1301,6 +1303,28 @@ main h2{
     top: 13px;
     background-color: #000000;
     border-radius: 50%;
+}
+
+.filter-checkbox:hover + label::before,
+.filter-radio:hover + label::before,
+.filter-radio:hover + label::after{
+    opacity: 0.6;
+}
+ 
+.filter-checkbox:focus + label::before,
+.filter-radio:focus + label::before{
+    opacity: 1;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+.filter-radio:focus + label::after{
+    opacity: 1;
+}
+
+.filter-input:disabled:hover + label::before,
+.filter-input:disabled:hover + label::after{
+    opacity: 1;
 }
 
 .filter-button{
