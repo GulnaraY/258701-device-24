@@ -404,14 +404,6 @@ input[type="radio"].visually-hidden {
     opacity: 0.3;
 }
 
-main h2{
-    font-family: "gilroyextrabold", Arial, sans-serif;
-    font-size: 47px;
-    line-height: 48px;
-    letter-spacing: 0.47px;
-    font-weight: normal;
-}
-
 .popular-products{
     position: relative;
 }
@@ -853,6 +845,11 @@ main h2{
 
 .about-us h2,
 .contacts h2{
+    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-size: 47px;
+    line-height: 48px;
+    letter-spacing: 0.47px;
+    font-weight: normal;
     margin: 0;
     margin-bottom: 43px;
     padding: 0;
