@@ -160,6 +160,10 @@ input[type="radio"].visually-hidden {
 
 .search-form{
     position: relative;
+    padding-left:40px;
+    background-image: url("../img/search_icon.svg");
+    background-repeat: no-repeat;
+    background-position: 3px 17px;
 }
 
 .search-form input[type="search"]{
@@ -168,22 +172,12 @@ input[type="radio"].visually-hidden {
     border: none;
     border-bottom: 2px solid transparent;
     border-top: 2px solid transparent;
-    padding-left: 40px;
+    /*padding-left: 40px;*/
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     width: 295px;
     opacity: 0.3;
-}
-
-.search-icon{
-    display: inline-block;
-    width: 20px;
-    height: 16px;
-    background: url("../img/search_icon.svg") no-repeat center bottom;
-    position: absolute;
-    top:17px;
-    left: 0;
 }
 
 .search-form input:hover{
