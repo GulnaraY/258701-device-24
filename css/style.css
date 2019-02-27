@@ -195,6 +195,7 @@ input[type="radio"].visually-hidden {
     background-color: transparent;
     color: #000000;
     display: none;
+    vertical-align: top;
     margin-left:-4px;
     padding: 10px 20px;
 }
@@ -1213,6 +1214,7 @@ main h2{
 
 .price-controls label{
     display: inline-block;
+    vertical-align: top;
     width: 49%;
     font-family: "gilroylight", Arial, sans-serif;
     font-size: 14px;
@@ -1747,6 +1749,7 @@ li.footer-sign-out{
 
 .footer-copyright a{
     display: inline-block;
+    vertical-align: top;
     width: 30px;
     height: 40px;
     background-image: url("../img/logo-htmlacademy.svg");
@@ -1855,6 +1858,7 @@ li.footer-sign-out{
     box-sizing: border-box;
     width: 360px;
     display: inline-block;
+    vertical-align: top;
     padding: 11px 18px;
     padding-bottom: 17px;
     background-color: #e5e5e5;
