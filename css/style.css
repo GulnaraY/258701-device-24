@@ -872,6 +872,13 @@ main h2{
     letter-spacing: 0;
 }
 
+.contacts img{
+    display: block;
+    width: 560px;
+    height: 222px;
+    background-color: #ebebeb;
+}
+
 .delivery-partners-list{
     margin: 0;
     margin-top: 65px;
@@ -1354,7 +1361,11 @@ main h2{
 }
 
 .catalog-item-image img{
+    display: block;
+    width: 360px;
+    height: 380px;
     margin-bottom: 23px;
+    background-color: #ebebeb;
 }
 
 .catalog-item-price{
@@ -1907,7 +1918,6 @@ li.footer-sign-out{
     width: 960px;
     height: 559px;
     z-index: 300;
-    /*display: block;*/
 }
 
 .modal-map iframe{
@@ -1923,6 +1933,14 @@ li.footer-sign-out{
     top: 0;
     left: 0;
     z-index: 1;
+   
+}
+
+.modal-map img{
+    display: block;
+    width: 960px;
+    height: 559px; 
+    background-color: #ebebeb;
 }
 
 .modal .popup-close{
