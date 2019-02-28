@@ -529,15 +529,25 @@ input[type="radio"].visually-hidden {
     font-size: 0;
 }
 
-.slider-controls i{
+.slider-controls ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.slider-controls li{
     display: inline-block;
-    position: relative;
-    width: 11px;
-    height: 11px;
+    vertical-align: top; 
     margin: 0;
     padding: 0;
     margin-right: 20px;
-    vertical-align: top;
+}
+
+.slider-controls i{
+    display: block;
+    position: relative;
+    width: 11px;
+    height: 11px;
     background-color: transparent;
     border: 1px solid #000000;
     border-radius: 50%;
@@ -555,7 +565,7 @@ input[type="radio"].visually-hidden {
     border-radius: 50%;
 }
 
-.slider-controls i:last-child{
+.slider-controls li:last-child{
     margin-right: 0;
 }
 
