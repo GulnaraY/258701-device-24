@@ -363,6 +363,9 @@ input[type="radio"].visually-hidden{
 }
 
 .category-menu{
+    font-size: 15px;
+    line-height: 36px;
+
     position: absolute;
     z-index: 20;
     top: 23px;
@@ -370,12 +373,8 @@ input[type="radio"].visually-hidden{
 
     display: none;
     flex-direction: column;
-    justify-content: flex-start;
-    align-content: flex-start;
 
     box-sizing: border-box;
-    font-size: 15px;
-    line-height: 36px;
     width: 1160px;
     height: 165px;
     padding-top: 24px;
@@ -385,6 +384,8 @@ input[type="radio"].visually-hidden{
 
     background-color: #fff;
 
+    justify-content: flex-start;
+    align-content: flex-start;
     flex-wrap: wrap;
 }
 
@@ -409,12 +410,7 @@ input[type="radio"].visually-hidden{
 .category-menu li{
     min-width: 140px;
     padding-right: 60px;
-    /*padding-right: 60px;*/
 }
-
-/*.category-menu li:last-child{
-    margin-bottom: 0;
-}*/
 
 .category-menu li:nth-child(3n-1):nth-last-child(2){
     margin-bottom: 30px;
@@ -549,14 +545,14 @@ input[type="radio"].visually-hidden{
 }
 
 .products-slider-item:nth-child(1){
-    margin-bottom: 97px;
+    margin-bottom: 98px;
 }
 .products-slider-item:nth-child(2){
     margin-bottom: 84px;
 }
 
 .products-slider-item:nth-child(3){
-    margin-bottom: 112px;
+    margin-bottom: 108px;
 }
 
 .show-slide{
@@ -672,7 +668,7 @@ input[type="radio"].visually-hidden{
 
 .slider-promo-text{
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
     padding: 0;
 }
 
@@ -774,6 +770,7 @@ input[type="radio"].visually-hidden{
     background-color: rgba(240, 197, 46, 0.5);
 
     justify-content: center;
+    align-items: center;
 }
 
 .not-center-image{
@@ -1078,7 +1075,7 @@ input[type="radio"].visually-hidden{
 
 .contacts .button{
     width: 260px;
-    margin-top: 23px;
+    margin-top: 31px;
 }
 
 .inner-page .page-title{
@@ -1218,10 +1215,12 @@ input[type="radio"].visually-hidden{
 .product-sorting{
     display: flex;
 
-    min-height: 70px;
+    min-height: 47px;
+    /*padding-top: 23px;*/
     margin-bottom: 70px;
+    padding-top: 19px;
 
-    align-items: center;
+    align-items: baseline;
 }
 
 .sorting-title{
@@ -1244,7 +1243,7 @@ input[type="radio"].visually-hidden{
 .sorting-direction{
     display: flex;
 
-    width: 45px;
+    width: 41px;
 
     justify-content: space-between;
 }
@@ -1329,9 +1328,17 @@ input[type="radio"].visually-hidden{
     border: none;
 }
 
-.filter-form fieldset::before{
+.color-filter ul,
+.bluetooth-filter ul,
+.range-filter{
+    position: relative;
+}
+
+.color-filter ul::before,
+.bluetooth-filter ul::before,
+.range-filter::before{
     position: absolute;
-    top: -13px;
+    top: -71px;
     left: 0;
 
     width: 200px;
@@ -1341,6 +1348,17 @@ input[type="radio"].visually-hidden{
 
     background-color: #000;
 }
+
+
+.color-filter ul::before{
+    top: -56px;
+}
+
+.bluetooth-filter ul::before{
+    top: -56px;
+}
+
+
 
 .filter-form fieldset:last-of-type{
     margin-bottom: 30px;
@@ -1653,6 +1671,7 @@ fieldset.color-filter{
     width: 360px;
     height: 380px;
     margin-bottom: 31px;
+
     background-color: #ebebeb;
 }
 
@@ -1703,10 +1722,10 @@ fieldset.color-filter{
 
     width: 360px;
     height: 209px;
+    padding-top: 171px;
 
     background-color: rgba(255, 255, 255, 0.7);
 
-    padding-top: 171px;
     align-items: center;
 }
 .catalog-item-actions .button{
@@ -1988,7 +2007,7 @@ li.footer-sign-out{
 .footer-middle{
     display: flex;
 
-    margin-bottom: 57px;
+    margin-bottom: 60px;
 
     justify-content: space-between;
     align-items: flex-end;
@@ -2109,14 +2128,14 @@ li.footer-sign-out{
 .footer-copyright a{
     display: inline-block;
 
-    width: 30px;
-    height: 40px;
+    width: 28px;
+    height: 35px;
 
     vertical-align: top;
 
     background-image: url("../img/logo-htmlacademy.svg");
     background-repeat: no-repeat;
-    background-position: 100%;
+    background-position: 0 0;
 }
 
 @keyframes bounce{

@@ -91,16 +91,16 @@
 		var slide = 0;
 		controls[i].addEventListener("click", function(evt){
 			evt.preventDefault();
-			if (!evt.path[0].classList.contains("active")){
+			if (!evt.target.classList.contains("active")){
 				for (var j = 0; j <= controls.length-1; j++){
 					if (controls[j].classList.contains("active")){
 						controls[j].classList.remove("active");
 					}
-					if (controls[j] === evt.path[0]){
+					if (controls[j] === evt.target){
 						slide = j;
 					}
 				}
-				evt.path[0].classList.add("active");
+				evt.target.classList.add("active");
 				if (!productsSlider[slide].classList.contains("show-slide")){
 					for( var j = 0; j <= productsSlider.length-1; j++){
 						if (productsSlider[j].classList.contains("show-slide")) {
@@ -117,16 +117,16 @@
 		var servicesSlide = 0;
 		servicesButtons[i].addEventListener("click", function(evt){
 			evt.preventDefault();
-			if (!evt.path[0].classList.contains("active-item")){
+			if (!evt.target.classList.contains("active-item")){
 				for (var j = 0; j <=servicesButtons.length-1; j++){
 					if (servicesButtons[j].classList.contains("active-item")) {
 						servicesButtons[j].classList.remove("active-item");
 					}
-					if (servicesButtons[j] === evt.path[0]) {
+					if (servicesButtons[j] === evt.target) {
 						servicesSlide = j;
 					}
 				}
-				evt.path[0].classList.add("active-item");
+				evt.target.classList.add("active-item");
 				if (!servicesSliderItems[servicesSlide].classList.contains("services-active-item")){
 					for (var j = 0; j <= servicesSliderItems.length-1; j++){
 						if (servicesSliderItems[j].classList.contains("services-active-item")) {
