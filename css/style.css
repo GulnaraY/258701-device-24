@@ -247,10 +247,12 @@ input[type="radio"].visually-hidden{
 
 .search-item:focus ~ button{
     display: inline-block;
+    vertical-align: top;
 }
 
 .search-form button:hover{
     display: inline-block;
+    vertical-align: top;
 
     color: #fff;
     background-color: #000;
@@ -259,6 +261,7 @@ input[type="radio"].visually-hidden{
 .search-form button:active,
 .search-form button:focus{
     display: inline-block;
+    vertical-align: top;
 
     color: rgba(255,255, 255, 0.3);
     background-color: #000;
