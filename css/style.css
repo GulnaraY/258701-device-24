@@ -1405,7 +1405,7 @@ input[type="radio"].visually-hidden{
 .filter-title{
     height: 24px;
     margin: 0;
-    margin-bottom: 83px;
+    margin-bottom: 81px;
     padding: 23px 0;
 }
 
@@ -1442,14 +1442,12 @@ input[type="radio"].visually-hidden{
 
 
 .color-filter ul::before{
-    top: -56px;
+    top: -54px;
 }
 
 .bluetooth-filter ul::before{
     top: -56px;
 }
-
-
 
 .filter-form fieldset:last-of-type{
     margin-bottom: 30px;
@@ -1469,7 +1467,10 @@ input[type="radio"].visually-hidden{
     letter-spacing: 0.18px;
 }
 
-.color-filter legend,
+.color-filter legend{
+    margin-bottom: 18px;
+}
+
 .bluetooth-filter legend{
     margin-bottom: 20px;
 }
@@ -1585,7 +1586,7 @@ fieldset.price-filter{
 }
 
 fieldset.color-filter{
-    margin-bottom: 45px;
+    margin-bottom: 43px;
 }
 
 .filter-input:disabled + label{
