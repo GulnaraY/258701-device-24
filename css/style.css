@@ -21,7 +21,7 @@ body{
     font-size: 15px;
     font-weight: 300;
     line-height: 30px;
-
+    min-width: 1200px;
     margin: 0;
 
     letter-spacing: 0.15px;
@@ -716,17 +716,20 @@ input[type="radio"].visually-hidden{
     margin-bottom: 45px;
 }
 
+
+
 .slider-products-info tbody{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     flex-direction: column-reverse;
 
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
     -ms-flex-line-pack: justify;
     align-content: space-between;
+}
+
+.slider-products-info tr {
+    display: block;    
 }
 
 .slider-products-info th{
@@ -740,6 +743,7 @@ input[type="radio"].visually-hidden{
     padding: 0;
 
     letter-spacing: 0.13px;
+    text-align: left;
 }
 
 .slider-products-info td{
