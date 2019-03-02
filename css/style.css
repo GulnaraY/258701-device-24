@@ -2301,10 +2301,6 @@ li.footer-sign-out{
     height: 35px;
 
     vertical-align: top;
-
-    background-image: url("../img/logo-htmlacademy.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
 }
 
 @-webkit-keyframes bounce{
