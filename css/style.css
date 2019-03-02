@@ -646,14 +646,15 @@ input[type="radio"].visually-hidden{
     right: 102px;
 }
 
-.slider-controls ul{
+/*.slider-controls ul{
     margin: 0;
     padding: 0;
 
     list-style: none;
-}
+}*/
 
-.slider-controls li{
+.slider-controls i{
+    position: relative;
     display: inline-block;
 
     margin: 0;
@@ -661,12 +662,6 @@ input[type="radio"].visually-hidden{
     padding: 0;
 
     vertical-align: top;
-}
-
-.slider-controls i{
-    position: relative;
-
-    display: block;
 
     width: 11px;
     height: 11px;
@@ -692,7 +687,7 @@ input[type="radio"].visually-hidden{
     border-radius: 50%;
 }
 
-.slider-controls li:last-child{
+.slider-controls i:last-child{
     margin-right: 0;
 }
 
