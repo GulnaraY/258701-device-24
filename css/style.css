@@ -245,7 +245,7 @@ input[type="radio"].visually-hidden{
     background-color: transparent;
 }
 
-.search-form input:focus ~ button{
+.search-item:focus ~ button{
     display: inline-block;
 }
 
