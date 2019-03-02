@@ -649,13 +649,6 @@ input[type="radio"].visually-hidden{
     right: 102px;
 }
 
-/*.slider-controls ul{
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-}*/
-
 .slider-controls i{
     position: relative;
     display: inline-block;
@@ -2526,6 +2519,7 @@ li.footer-sign-out{
 .feedback-form textarea:focus{
     border: 3px solid rgba(240, 197, 46, 0.5);
     background-color: transparent;
+    outline: none;
 }
 
 .feedback-form input:invalid,
