@@ -1,4 +1,7 @@
-# Неадаптивная верстка. Магазин гаджетов Device
+# Магазин гаджетов Device
 
-* ссылка на опубликованную версию https://GulnaraY.github.io/device-non-adaptive/index.html#
-* страница каталога https://GulnaraY.github.io/device-non-adaptive/catalog.html
+## Неадаптивная верстка
+
+## Опубликованная версия:
+* <a href="https://GulnaraYakupova.github.io/device-non-adaptive/index.html">Главная страница</a>
+* <a href="https://GulnaraYakupova.github.io/device-non-adaptive/catalog.html">Cтраница каталога: моноподы для селфи</a>
